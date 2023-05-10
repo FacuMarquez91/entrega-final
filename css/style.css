@@ -591,12 +591,12 @@
     min-width: 150px;
     height: 360px; }
   .seccion-ps .show-info .lugar {
-    font-size: 18px; }
+    font-size: 15px; }
   .seccion-ps .show-info .evento {
     font-size: 15px; }
   .seccion-ps .descripcion p {
-    max-width: 310px;
-    font-size: 11px;
+    max-width: 300px;
+    font-size: 10px;
     padding-left: 10px; }
   .seccion-ps .ticket {
     width: 57px;
