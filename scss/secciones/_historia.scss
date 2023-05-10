@@ -1,0 +1,53 @@
+/* estilo de seccion historia*/
+
+
+.seccion-1h {
+    overflow: hidden;
+
+
+
+    h2 {
+        color: $titulos;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 30px;
+        padding: 10px;
+
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px;
+        font-family: $texto;
+
+    }
+
+
+    div {
+        background-color: $transparencia
+    }
+
+
+}
+
+.main__seccion-2h {
+    &--div {
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
+
+        .card {
+            width: 18rem;
+            background-color: rgba(211, 219, 219, 0.541);
+            img {
+                height: 200px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+ 

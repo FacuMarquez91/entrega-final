@@ -1,0 +1,160 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    //grid-template-rows: 16.6vh 16.6vh 16.6vh 16.6vh 16.6vh 16.6vh;
+    grid-template-areas:
+        "header header header header"
+        "seccion-0 seccion-0 seccion-0 seccion-0 "
+        "seccion-1 seccion-1 seccion-1 seccion-1 "
+        "seccion-2 seccion-2 seccion-4 seccion-4"
+        "seccion-3 seccion-3 seccion-3 seccion-3 "
+        "footer footer footer footer"
+    ;
+
+}
+
+
+
+.seccion-1 {
+    grid-area: seccion-1;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px;
+
+
+    p {
+        color: white;
+        max-width: 1260px;
+        text-align: center;
+        padding: 15px;
+        margin: auto;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: $texto;
+
+        span {
+            color: coral;
+        }
+    }
+
+    img {
+        padding: 25px;
+        padding-top: 20px;
+        margin: auto;
+        box-shadow: 10px 10px 15px $sombreado;
+        
+    }
+}
+
+.seccion-2 {
+    grid-area: seccion-2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top: rgba(255, 127, 80, 0.562) solid 2px;
+    
+    
+    
+
+    h2 {
+        color: $titulos;
+        text-align: center;
+        padding: 10px;
+        font-size: 40px;
+        padding-top: 60px;
+        
+
+    }
+
+    h3 {
+        color: white;
+        text-align: center;
+        padding: 5px;
+        padding-top: 20px;
+    }
+
+    p {
+        text-align: center;
+        color: white;
+        padding: 5px;
+    }
+
+    iframe {
+        padding-left: 23px;
+        padding-top: 10px;
+        width: 432px;
+        margin: auto;
+        box-shadow: 10px 10px 15px $sombreado;
+    }
+}
+
+
+.seccion-3 {
+    grid-area: seccion-3;
+    border-top: rgba(255, 127, 80, 0.562) solid 2px;
+
+    h2 {
+        font-size: 40px;
+        color: $titulos;
+        text-align: center;
+        padding: 10px;
+        padding-top: 40px;
+    }
+
+    img {
+        width: 200px;
+
+        &:hover {
+            transform: scale(1.8);
+            transition: 1s;
+        }
+    }
+
+    .img-sec-3 {
+        display: flex;
+        flex-wrap: wrap;
+
+        padding: 30px;
+        padding-left: 10px;
+        margin: auto;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+.seccion-4 {
+    padding-top: 60px;
+    grid-area: seccion-4;
+    border-top: rgba(255, 127, 80, 0.562) solid 2px;
+
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        color: $titulos;
+
+    }
+
+    h3 {
+        padding: 15px;
+        color: white;
+        text-align: center;
+        padding-top: 28px;
+    }
+
+    .div-iframe {
+        display: flex;
+        margin-inline: auto;
+        justify-content: center;
+        padding-block-end: 20px;
+
+        iframe {
+            box-shadow: 10px 10px 15px $sombreado;
+        }
+    }
+}

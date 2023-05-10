@@ -1,0 +1,450 @@
+//medias queries - tablet
+@media(max-width:768px) {
+
+    //medias queries - index
+    #container {
+        grid-template-rows: repeat(14.2vh, 14.2vh, 14.2vh, 14.2vh, 14.2vh, 14.2vh, 14.2vh);
+        grid-template-areas:
+            "header header header header"
+            "seccion-0 seccion-0 seccion-0 seccion-0 "
+            "seccion-1 seccion-1 seccion-1 seccion-1 "
+            "seccion-2 seccion-2 seccion-2 seccion-2"
+            "seccion-3 seccion-3 seccion-3 seccion-3 "
+            "seccion-4 seccion-4 seccion-4 seccion-4"
+            "footer footer footer footer"
+        ;
+        overflow: hidden;
+
+
+    }
+
+    .header {
+        flex-direction: column;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        img {
+            height: 10vh;
+        }
+
+        .ul {
+            width: 360px;
+            height: 60px;
+            font-size: 5px;
+
+            li {
+                a {
+                    font-size: 10px;
+                    ;
+                }
+            }
+        }
+
+    }
+
+    .seccion-1 {
+        img {
+            width: 330px;
+            margin: auto;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+    }
+
+    .seccion-2 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        iframe {
+            padding-left: 0px;
+            padding-top: 10px;
+            width: 320px;
+            margin: auto;
+        }
+    }
+
+    .seccion-3 {
+        img {
+            width: 180px;
+
+            &:hover {
+                transform: scale(1.4);
+                transition: 1s;
+            }
+
+        }
+    
+    }
+
+
+
+
+    //medias queries - seccion proximos shows
+    .seccion-ps {
+        overflow: hidden;
+
+        .formato-caja {
+            min-width: 150px;
+            height: 250px;
+
+            .show-date {
+                padding-right: 10px;
+                height: 130px;
+                padding-top: 5px;
+
+                .dia {
+                    font-size: 16px;
+                }
+
+                .mes {
+                    font-size: 16px;
+                }
+
+                .año {
+                    font-size: 16px;
+                }
+
+                .hora {
+                    font-size: 16px;
+                }
+            }
+
+            .lugar {
+                font-size: 25px;
+            }
+
+            .evento {
+                font-size: 20px;
+            }
+
+            .descripcion {
+                max-width: 400px;
+                font-size: 11px;
+            }
+
+
+            .ticket {
+                width: 57px;
+                height: 22px;
+                font-size: 10px;
+            }
+
+        }
+    }
+
+    .seccion-2-ps {
+        &__div {
+            max-height: 1350px;
+
+            .card {
+                width: 10rem;
+
+            }
+
+            h5 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+
+        }
+    }
+
+
+
+
+    //media queries - discografia
+
+
+    .seccion-2-disc {
+
+        .div-sec-2 {
+            width: 530px;
+            margin: auto;
+
+            img {
+                width: 100px;
+                width: 100px;
+                height: 100px;
+                padding: 5px
+            }
+        }
+    }
+
+
+
+    .footer {
+
+        .ul-2 {
+            width: 430px;
+            padding-right: 30px;
+
+            li {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+//medias queries - mobile
+@media(max-width: 465px) {
+
+
+    #container {
+        grid-template-rows: repeat(14.2vh, 14.2vh, 14.2vh, 14.2vh, 14.2vh, 14.2vh, 14.2vh);
+        grid-template-areas:
+            "header header header header"
+            "seccion-0 seccion-0 seccion-0 seccion-0 "
+            "seccion-1 seccion-1 seccion-1 seccion-1 "
+            "seccion-2 seccion-2 seccion-2 seccion-2"
+            "seccion-3 seccion-3 seccion-3 seccion-3 "
+            "seccion-4 seccion-4 seccion-4 seccion-4"
+            "footer footer footer footer"
+        ;
+
+
+    }
+
+    //media queries - header - mobile
+    .ul {
+        width: 369px;
+        height: 60px;
+        font-size: 5px;
+    }
+
+
+    // Medias queries - index - mobile
+
+    .seccion-1 {
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .seccion-3 {
+
+        .img-sec-3 {
+            padding: 10px;
+            width: 360px;
+
+            img {
+                width: 100px;
+
+                &:hover {
+                    transform: scale(1.4);
+                    transition: 1s;
+                }
+            }
+        }
+    }
+
+
+    //medias queries - proximos shows - mobile
+
+
+    .seccion-ps {
+        .show-h2 {
+
+            font-size: 25px;
+        }
+
+
+        .show-item {
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .show-date {
+                min-width: 160px;
+                
+
+                .dia {
+                    font-size: 16px;
+                }
+
+                .mes {
+                    font-size: 16px;
+                }
+
+                .año {
+                    font-size: 16px;
+                }
+
+                .hora {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .formato-caja {
+            min-width: 150px;
+            height: 360px;
+
+        }
+
+        .show-info {
+
+            .lugar {
+                font-size: 18px;
+            }
+
+            .evento {
+                font-size: 15px;
+            }
+        }
+
+        .descripcion {
+            p{
+            max-width: 310px;
+            font-size: 11px;
+            padding-left: 10px;
+            }
+        }
+
+
+        .ticket {
+            width: 57px;
+            height: 22px;
+            font-size: 10px;
+        }
+    }
+
+    .seccion-2-ps {
+
+        &__div {
+            max-height: 1350px;
+
+            .card {
+                width: 8rem;
+
+            }
+
+            h5 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+
+        }
+    }
+
+    //medias queries - discografia - mobile
+
+    #grid-padre {
+        overflow: hidden;
+
+
+        .seccion-1-disc {
+            h2 {
+                font-size: 30px;
+
+                p {
+                    font-size: 15px;
+                }
+
+            }
+        }
+
+        .seccion-2-disc {
+            h2 {
+                font-size: 25px;
+            }
+
+            .div-sec-2{
+                width: 336px;
+            }
+
+            .ul-disc {
+                
+                width: 340px;
+                padding: 4px;
+                
+
+                img {
+                    height: 110px;
+                    padding: 5px
+                }
+            }
+
+        }
+
+    }
+
+    //medias queries - historia - mobile
+
+
+    .seccion-1h {
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .main__seccion-2h {
+        &--div {
+            max-height: 1610px;
+
+            .card {
+                width: 10rem;
+
+                h5 {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: coral;
+
+                }
+
+                p {
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+
+    // medias queries - contacto - mobile
+
+
+    .main {
+        h2 {
+            font-size: 25px;
+        }
+
+        .div-contacto p {
+            font-size: 15px;
+        }
+
+
+    }
+
+
+
+    //meidas queries - footer - mobile
+
+
+    .footer {
+
+        .ul-2 {
+            width: 360px;
+            padding-right: 30px;
+
+            li {
+                font-size: 30px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,143 @@
+/*ESTILO seccion discografia*/
+
+#grid-padre {
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(5, 20vh);
+    grid-area:
+        "header header header header"
+        "seccion-0 seccion-0 seccion-0 seccion-0"
+        "seccion-1-disc seccion-1-disc seccion-1-disc seccion-1-disc"
+        "seccion-2-disc seccion-2-disc seccion-2-disc seccion-2-disc"
+        "footer footer footer footer"
+    ;
+    
+}
+
+.header {
+    grid-area: header;
+
+}
+
+.seccion-0 {
+    grid-area: seccion-0;
+}
+
+.seccion-1-disc {
+    grid-area: seccion-1-disc;
+
+    h2 {
+        font-size: 50px;
+        font-weight: bold;
+        color: $titulos;
+        text-align: center;
+        padding-top: 30px;
+
+
+    }
+
+    .div-sec {
+
+        background-color: $transparencia;
+
+    }
+
+    .div-sec-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+
+
+        h3 {
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        p {
+            max-width: 1140px;
+            padding: 10px;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: $texto;
+
+            span {
+                color: coral;
+            }
+        }
+
+        iframe {
+            padding: 25px 0 80px;
+        }
+
+
+
+    }
+
+    .byf {
+        padding-top: 50px;
+        border-top: dashed 5px grey;
+    }
+}
+
+
+.seccion-2-disc {
+    grid-area: seccion-2-disc;
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    border-top: rgba(255, 127, 80, 0.562) solid 2px;
+
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+        color: $titulos;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+    .div-sec-2 {
+        display: flex;
+    }
+
+
+    .ul-disc {
+        display: flex;
+        height: 600px;
+        width: 1300px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+        justify-content: space-between;
+        list-style: none;
+        
+
+        img {
+            width: 200px;
+            height: 200px;
+            padding: 5px;
+
+            &:hover {
+                background-color: rgba(128, 128, 128, 0.116);
+                transform: scale(1.2);
+                transition: 1s;
+
+            }
+        }
+
+
+
+    }
+
+
+}
+
+
+.footer {
+    grid-area: footer;
+    flex-wrap: wrap;
+}
