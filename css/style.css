@@ -77,12 +77,7 @@
 #container {
   display: grid;
   grid-template-columns: repeat(4, 25vw);
-  grid-template-areas: "header header header header"
- "seccion-0 seccion-0 seccion-0 seccion-0 "
- "seccion-1 seccion-1 seccion-1 seccion-1 "
- "seccion-2 seccion-2 seccion-4 seccion-4"
- "seccion-3 seccion-3 seccion-3 seccion-3 "
- "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "seccion-0 seccion-0 seccion-0 seccion-0 " "seccion-1 seccion-1 seccion-1 seccion-1 " "seccion-2 seccion-2 seccion-4 seccion-4" "seccion-3 seccion-3 seccion-3 seccion-3 " "footer footer footer footer"; }
 
 .seccion-1 {
   grid-area: seccion-1;
@@ -196,27 +191,25 @@
   .seccion-1h div {
     background-color: rgba(108, 111, 112, 0.644); }
 
-.main__seccion-2h--div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px; }
-  .main__seccion-2h--div .card {
-    width: 18rem;
-    background-color: rgba(211, 219, 219, 0.541); }
-    .main__seccion-2h--div .card img {
-      height: 200px;
-      padding: 10px; }
+.main__seccion-2h {
+  border-top: rgba(255, 127, 80, 0.562) solid 2px; }
+  .main__seccion-2h--div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px; }
+    .main__seccion-2h--div .card {
+      width: 18rem;
+      background-color: rgba(211, 219, 219, 0.541); }
+      .main__seccion-2h--div .card img {
+        height: 200px;
+        padding: 10px; }
 
 /*ESTILO seccion discografia*/
 #grid-padre {
   grid-template-columns: repeat(4, 25vw);
   grid-template-rows: repeat(5, 20vh);
-  grid-area: "header header header header"
- "seccion-0 seccion-0 seccion-0 seccion-0"
- "seccion-1-disc seccion-1-disc seccion-1-disc seccion-1-disc"
- "seccion-2-disc seccion-2-disc seccion-2-disc seccion-2-disc"
- "footer footer footer footer"; }
+  grid-area: "header header header header" "seccion-0 seccion-0 seccion-0 seccion-0" "seccion-1-disc seccion-1-disc seccion-1-disc seccion-1-disc" "seccion-2-disc seccion-2-disc seccion-2-disc seccion-2-disc" "footer footer footer footer"; }
 
 .header {
   grid-area: header; }
@@ -349,10 +342,10 @@
     .seccion-ps .titulo .lugar {
       font-size: 40px;
       font-weight: bold;
-      color: #fdaa8c;
+      color: #f89f7e;
       flex-wrap: wrap; }
     .seccion-ps .titulo .evento {
-      color: #fdaa8c;
+      color: #f89f7e;
       font-size: 30px;
       font-weight: bold; }
   .seccion-ps .descripcion {
@@ -479,13 +472,7 @@
 @media (max-width: 768px) {
   #container {
     grid-template-rows: repeat(14.2vh, 14.2vh, 14.2vh, 14.2vh, 14.2vh, 14.2vh, 14.2vh);
-    grid-template-areas: "header header header header"
- "seccion-0 seccion-0 seccion-0 seccion-0 "
- "seccion-1 seccion-1 seccion-1 seccion-1 "
- "seccion-2 seccion-2 seccion-2 seccion-2"
- "seccion-3 seccion-3 seccion-3 seccion-3 "
- "seccion-4 seccion-4 seccion-4 seccion-4"
- "footer footer footer footer";
+    grid-template-areas: "header header header header" "seccion-0 seccion-0 seccion-0 seccion-0 " "seccion-1 seccion-1 seccion-1 seccion-1 " "seccion-2 seccion-2 seccion-2 seccion-2" "seccion-3 seccion-3 seccion-3 seccion-3 " "seccion-4 seccion-4 seccion-4 seccion-4" "footer footer footer footer";
     overflow: hidden; }
   .header {
     flex-direction: column; }
@@ -570,13 +557,7 @@
 @media (max-width: 465px) {
   #container {
     grid-template-rows: repeat(14.2vh, 14.2vh, 14.2vh, 14.2vh, 14.2vh, 14.2vh, 14.2vh);
-    grid-template-areas: "header header header header"
- "seccion-0 seccion-0 seccion-0 seccion-0 "
- "seccion-1 seccion-1 seccion-1 seccion-1 "
- "seccion-2 seccion-2 seccion-2 seccion-2"
- "seccion-3 seccion-3 seccion-3 seccion-3 "
- "seccion-4 seccion-4 seccion-4 seccion-4"
- "footer footer footer footer"; }
+    grid-template-areas: "header header header header" "seccion-0 seccion-0 seccion-0 seccion-0 " "seccion-1 seccion-1 seccion-1 seccion-1 " "seccion-2 seccion-2 seccion-2 seccion-2" "seccion-3 seccion-3 seccion-3 seccion-3 " "seccion-4 seccion-4 seccion-4 seccion-4" "footer footer footer footer"; }
   .ul {
     width: 369px;
     height: 60px;
